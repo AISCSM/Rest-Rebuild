@@ -211,7 +211,7 @@ button {
 /* Hero */
 .hero {
   padding: 4.5rem 0 3.5rem;
-  background: #ffffff;
+  background: var(--text-muted);
   color: #1111;
 }
 
@@ -230,13 +230,13 @@ button {
 }
 
 .hero-subtitle {
-  color: var(--text-muted);
+  color: #111111;
   max-width: 540px;
   margin: 0 0 1.75rem;
 }
 
 .hero-subtitle em {
-  font-style: italic;
+  font-style: italic
 }
 
 .eyebrow {
@@ -258,7 +258,7 @@ button {
 .hero-note {
   margin: 0;
   font-size: 0.86rem;
-  color: var(--text-muted);
+  color: #111111;
 }
 
 /* Hero side card */
