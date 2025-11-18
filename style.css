@@ -282,6 +282,7 @@ button {
   margin: 0.35rem 0 1rem;
   font-size: 1.3rem;
   font-family: "Playfair Display", serif;
+  color: var(--text-muted);
 }
 
 .hero-card-list {
@@ -306,6 +307,7 @@ button {
   color: var(--text-muted);
   text-align: center;
 }
+
 
 /* Events section */
 .events {
