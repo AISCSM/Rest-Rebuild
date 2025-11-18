@@ -263,12 +263,11 @@ button {
 
 /* Hero side card */
 .hero-card {
-  background: #FBEFE3;
+  background: radial-gradient(circle at top, #232845, #10121f 52%, #050612 100%);
   border-radius: var(--radius-xl);
   padding: 1.7rem 1.5rem;
   border: 1px solid rgba(213, 161, 163, 0.55);
   box-shadow: var(--shadow-soft);
-  color: #111111;
 }
 
 .hero-card-header p {
