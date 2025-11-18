@@ -211,6 +211,8 @@ button {
 /* Hero */
 .hero {
   padding: 4.5rem 0 3.5rem;
+  background: #ffffff;
+  color: #1111;
 }
 
 .hero-inner {
@@ -224,6 +226,7 @@ button {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.6rem, 3vw, 3rem);
   margin: 0 0 0.75rem;
+  color: #111111;
 }
 
 .hero-subtitle {
@@ -260,11 +263,12 @@ button {
 
 /* Hero side card */
 .hero-card {
-  background: radial-gradient(circle at top, #232845, #10121f 52%, #050612 100%);
+  background: #FBEFE3;
   border-radius: var(--radius-xl);
   padding: 1.7rem 1.5rem;
   border: 1px solid rgba(213, 161, 163, 0.55);
   box-shadow: var(--shadow-soft);
+  color: #111111;
 }
 
 .hero-card-header p {
