@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R&R | Rest & Rebuild</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">R</span>
+        <div class="logo-text-wrap">
+          <span class="logo-text-main">R&amp;R</span>
+          <span class="logo-text-sub">Rest &amp; Rebuild</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#hero">Home</a>
+        <a href="#events">Events</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#membership">Membership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-outline" id="nav-cta">Browse Events</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">For burned-out corporate girlies</p>
+          <h1>Rest your nervous system. Rebuild your soft life.</h1>
+          <p class="hero-subtitle">
+            R&amp;R (Rest &amp; Rebuild) is your home for reformer classes, paint &amp; sip nights, financial glow-up sessions,
+            and soft life socials designed for women who do <em>a lot</em> — and deserve ease.
+          </p>
+          <div class="hero-actions">
+            <button class="btn" id="hero-browse">Browse Events</button>
+            <button class="btn btn-ghost" id="hero-join-waitlist">Join Founding Member List</button>
+          </div>
+          <p class="hero-note">Book classes, split costs with friends, and soon: manage everything in our app.</p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <p>Upcoming Soft Life Social</p>
+            <h2>Paint &amp; Sip Evenings</h2>
+          </div>
+          <ul class="hero-card-list">
+            <li>Curated wine &amp; nibbles</li>
+            <li>All materials included</li>
+            <li>Come solo or with friends</li>
+          </ul>
+          <button class="btn btn-small hero-card-btn" data-quick-book="paint-sip">Book Your Spot</button>
+          <p class="hero-card-footnote">Limited spots · Central London</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event filters & list -->
+    <section id="events" class="section events">
+      <div class="container">
+        <div class="section-header">
+          <h2>Curated Events To Rest & Rebuild</h2>
+          <p>
+            From reformer and spin to vision board brunches and money reset nights –
+            choose what you need right now: movement, connection, or growth.
+          </p>
+        </div>
+
+        <div class="event-filters">
+          <div class="filter-group">
+            <span class="filter-label">Category</span>
+            <button class="chip chip-active" data-category="all">All</button>
+            <button class="chip" data-category="fitness">Fitness &amp; Connection</button>
+            <button class="chip" data-category="growth">Growth &amp; Lifestyle</button>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-label">When</span>
+            <button class="chip" data-tag="evening">Evenings</button>
+            <button class="chip" data-tag="weekend">Weekends</button>
+            <button class="chip" data-tag="indoor">Indoors</button>
+            <button class="chip" data-tag="outdoor">Outdoors</button>
+          </div>
+
+          <div class="filter-group search-group">
+            <label for="search-input" class="filter-label">Search</label>
+            <input id="search-input" type="text" placeholder="Search events, e.g. &quot;reformer&quot;, &quot;finance&quot;..." />
+          </div>
+        </div>
+
+        <div id="event-list" class="event-list">
+          <!-- JS will render cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="section hiw">
+      <div class="container">
+        <div class="section-header">
+          <h2>How R&amp;R Works</h2>
+          <p>Designed to be softer than your inbox and sharper than your Outlook calendar.</p>
+        </div>
+        <div class="hiw-grid">
+          <div class="hiw-card">
+            <span class="hiw-step">01</span>
+            <h3>Browse your rest</h3>
+            <p>
+              Filter by mood: move your body, connect with women like you, or focus on money, career, and growth.
+            </p>
+          </div>
+          <div class="hiw-card">
+            <span class="hiw-step">02</span>
+            <h3>Book &amp; pay in minutes</h3>
+            <p>
+              Choose your slot, add your details, and checkout through our secure payment flow.
+              You’ll receive a confirmation straight away.
+            </p>
+          </div>
+          <div class="hiw-card">
+            <span class="hiw-step">03</span>
+            <h3>Show up as you are</h3>
+            <p>
+              We handle the logistics so you can just arrive, exhale, and be held by community.
+              Our future app will keep everything in one place.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership teaser -->
+    <section id="membership" class="section membership">
+      <div class="container membership-inner">
+        <div class="membership-copy">
+          <h2>R&amp;R Circle Membership (Coming Soon)</h2>
+          <p>
+            For the girlies who want this to be a lifestyle, not a one-off treat.
+            Early members get first access to sold-out events and better pricing.
+          </p>
+          <ul class="bullet-list">
+            <li>Priority access to high-demand events (reformer, spin, paint &amp; sip).</li>
+            <li>Founding member pricing on classes and socials.</li>
+            <li>Private group for accountability, planning and soft life inspo.</li>
+            <li>App access when we launch (your bookings, calendar, and payments in one place).</li>
+          </ul>
+          <button class="btn" id="membership-join">Join The Waitlist</button>
+        </div>
+        <div class="membership-tag">
+          <p>Rest Now. Rebuild Gently.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / footer section -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>Host a Class or Partner With R&amp;R</h2>
+          <p>
+            Are you a Pilates instructor, therapist, finance girly, or female founder who wants to host with us?
+            Tell us about your ideas – we love co-creating.
+          </p>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" rows="4" placeholder="Share your idea, venue, or collaboration thoughts." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-small">Send Message</button>
+            <p class="form-note" id="contact-status"></p>
+          </form>
+        </div>
+        <div class="newsletter">
+          <h3>Stay in the loop</h3>
+          <p>Monthly summary of upcoming classes, sold-out socials, and new city launches.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Email address" required />
+            <button type="submit" class="btn btn-small">Subscribe</button>
+          </form>
+          <p class="form-note" id="newsletter-status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo footer-logo">
+          <span class="logo-mark">R</span>
+          <div class="logo-text-wrap">
+            <span class="logo-text-main">R&amp;R</span>
+            <span class="logo-text-sub">Rest &amp; Rebuild</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Soft life events for women who are tired of being “the strong one” all the time.</p>
+      </div>
+      <div class="footer-right">
+        <p>© <span id="year"></span> R&amp;R Collective. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking & Payment Modal -->
+  <div id="booking-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="booking-close" aria-label="Close booking form">×</button>
+
+      <div class="modal-steps" data-step="1">
+        <!-- Step 1: Booking details -->
+        <div class="modal-step modal-step-active" data-step-index="1">
+          <h2>Book Your Spot</h2>
+          <p class="modal-event-name" id="modal-event-name"></p>
+          <form id="booking-form" class="booking-form">
+            <div class="form-row">
+              <label for="book-name">Full Name</label>
+              <input id="book-name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="book-email">Email</label>
+              <input id="book-email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="book-guests">Number of spots</label>
+              <input id="book-guests" type="number" min="1" max="10" value="1" required />
+            </div>
+            <div class="form-row">
+              <label for="book-notes">Notes (optional)</label>
+              <textarea id="book-notes" rows="3" placeholder="Accessibility needs, coming with a friend, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-full">Continue to Payment</button>
+          </form>
+        </div>
+
+        <!-- Step 2: Payment (mock) -->
+        <div class="modal-step" data-step-index="2">
+          <h2>Secure Checkout</h2>
+          <p class="modal-event-name" id="modal-event-name-payment"></p>
+          <p class="modal-price" id="modal-price"></p>
+          <form id="payment-form" class="payment-form">
+            <div class="form-row">
+              <label for="card-name">Name on Card</label>
+              <input id="card-name" type="text" placeholder="As it appears on your card" required />
+            </div>
+            <div class="form-row">
+              <label for="card-number">Card Number</label>
+              <input id="card-number" type="text" maxlength="19" placeholder="1234 5678 9012 3456" required />
+            </div>
+            <div class="form-row form-row-inline">
+              <div>
+                <label for="card-expiry">Expiry</label>
+                <input id="card-expiry" type="text" maxlength="5" placeholder="MM/YY" required />
+              </div>
+              <div>
+                <label for="card-cvc">CVC</label>
+                <input id="card-cvc" type="text" maxlength="4" placeholder="123" required />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-full">Confirm Payment</button>
+            <p class="form-note small">This is a demo flow – in production, this would connect to Stripe or your chosen payment provider.</p>
+          </form>
+        </div>
+
+        <!-- Step 3: Confirmation -->
+        <div class="modal-step" data-step-index="3">
+          <h2>You're Booked ✨</h2>
+          <p id="confirmation-message">
+            Thank you for booking with R&amp;R. Your confirmation would normally arrive by email with all the details.
+          </p>
+          <button class="btn btn-full" id="close-confirmation">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
