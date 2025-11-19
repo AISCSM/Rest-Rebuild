@@ -201,6 +201,9 @@ const heroBrowseBtn = document.getElementById("hero-browse");
 const navCtaBtn = document.getElementById("nav-cta");
 const yearSpan = document.getElementById("year");
 
+const mainNav = document.getElementById("main-nav");
+const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+
 // Modal elements
 const bookingModal = document.getElementById("booking-modal");
 const bookingCloseBtn = document.getElementById("booking-close");
@@ -341,6 +344,20 @@ const closeModal = () => {
 
 // --- Event listeners ---
 document.addEventListener("DOMContentLoaded", () => {
+  // Mobile menu toggle
+  mobileMenuToggle?.addEventListener("click", () => {
+    mainNav?.classList.toggle("main-nav-open");
+    mobileMenuToggle.classList.toggle("menu-open");
+  });
+
+  // Close menu when clicking a nav link (mobile)
+  mainNav?.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      mainNav.classList.remove("main-nav-open");
+      mobileMenuToggle?.classList.remove("menu-open");
+    }
+  });
+  
   // Render events
   renderEvents();
   setYear();
