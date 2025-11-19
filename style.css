@@ -86,6 +86,45 @@ button {
   gap: 1.5rem;
   padding: 0.9rem 0;
 }
+/* Mobile menu toggle (hamburger) */
+.mobile-menu-toggle {
+  display: none; /* shown only on mobile in media query */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+
+  width: 36px;
+  height: 32px;
+  padding: 4px 6px;
+
+  border-radius: 999px;
+  border: 1px solid rgba(251, 239, 227, 0.85); /* soft outline */
+  background: rgba(5, 6, 18, 0.9); /* dark pill so lines pop */
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #FBEFE3; /* your soft pink */
+  border-radius: 999px;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+/* Open state = animated into "X" */
+.mobile-menu-toggle.menu-open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.mobile-menu-toggle.menu-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.menu-open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
 
 /* Logo */
 .logo {
@@ -148,45 +187,7 @@ button {
   color: var(--accent-soft);
   border-color: rgba(243, 201, 193, 0.5);
 }
-/* Mobile menu toggle (hamburger) */
-.mobile-menu-toggle {
-  display: none; /* shown only on mobile in media query */
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  width: 34px;
-  height: 28px;
-  padding: 0;
-  margin-left: 0.5rem;
-}
 
-.mobile-menu-toggle span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: var(--text);
-  margin: 5px 0;
-  border-radius: 999px;
-  transition: transform 0.18s ease, opacity 0.18s ease;
-}
-
-/* When nav is open, animate icon into an "X" */
-.mobile-menu-toggle.menu-open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.mobile-menu-toggle.menu-open span:nth-child(2) {
-  opacity: 0;
-}
-
-.mobile-menu-toggle.menu-open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-/* Make sure header CTA has a classname */
-.header-cta {
-  /* nothing extra yet, just lets us target it in media query */
-}
 /* Buttons */
 .btn {
   border-radius: 999px;
